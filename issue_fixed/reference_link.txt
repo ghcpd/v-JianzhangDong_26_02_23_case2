@@ -1,0 +1,24 @@
+The following modules and objects lacked docstrings in the original codebase:
+
+- issue/main.py (module and `main` function)
+- taskflow/__init__.py (module)
+- taskflow/engine.py:
+    * module-level
+    * class `TaskEngine`
+    * `TaskEngine.__init__`
+    * `TaskEngine.register`
+    * `TaskEngine.add_hook`
+    * `TaskEngine.execute`
+- taskflow/plugins.py:
+    * module-level
+    * `load_plugins` function
+- taskflow/scheduler.py:
+    * module-level
+    * class `Scheduler`
+    * `Scheduler.__init__`
+    * `Scheduler.run`
+- taskflow/utils.py:
+    * module-level
+    * `safe_execute` decorator
+
+These were added in the `issue_fixed` copy to satisfy documentation requirements.
