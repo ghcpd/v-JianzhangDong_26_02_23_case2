@@ -1,0 +1,11 @@
+User: Tests are failing because of missing docstrings. Need help fixing this.
+
+Can you:
+1. Setup fresh .venv from requirements.txt (delete existing one if there)
+2. Find all missing docstrings and list them in reference_link.txt
+3. Add the missing docs
+4. Create auto_test.py to run tests and log results to logs/test_run.log
+
+Please work in a new issue_fixed/ folder, don't touch the original files. Tests in tests/ should pass after adding the docs. Don't modify the test files themselves.
+
+Thanks!
