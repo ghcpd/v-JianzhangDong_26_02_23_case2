@@ -1,0 +1,8 @@
+Metadata-Version: 2.4
+Name: taskflow-engine
+Version: 0.1.0
+Summary: A lightweight pluggable task workflow engine
+Requires-Python: >=3.14
+Requires-Dist: pydantic>=2.6
+Requires-Dist: click>=8.1
+Requires-Dist: rich>=13.7
