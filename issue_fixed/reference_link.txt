@@ -1,0 +1,28 @@
+Missing docstrings (detected via ast walk; excluding tests):
+
+- main.py
+  - <module>
+  - main()
+- taskflow/engine.py
+  - <module>
+  - TaskEngine class
+  - TaskEngine.__init__
+  - TaskEngine.register
+  - TaskEngine.add_hook
+  - TaskEngine.execute
+- taskflow/plugins.py
+  - <module>
+  - load_plugins
+- taskflow/scheduler.py
+  - <module>
+  - Scheduler class
+  - Scheduler.__init__
+  - Scheduler.run
+- taskflow/utils.py
+  - <module>
+  - safe_execute
+  - wrapper (inner function)
+- taskflow/__init__.py
+  - <module>
+
+> Generated on 2026-02-23 using a quick AST scan script.
