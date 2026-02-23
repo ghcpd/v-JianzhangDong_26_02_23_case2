@@ -1,0 +1,33 @@
+Missing Docstrings Reference
+==============================
+
+The following classes, methods, and functions are missing docstrings:
+
+1. taskflow/engine.py:
+   - Line 5: TaskEngine class
+   - Line 7: TaskEngine.__init__ method
+   - Line 11: TaskEngine.register method
+   - Line 14: TaskEngine.add_hook method
+   - Line 17: TaskEngine.execute method
+
+2. taskflow/plugins.py:
+   - Line 5: load_plugins function
+
+3. taskflow/scheduler.py:
+   - Line 7: Scheduler class
+   - Line 9: Scheduler.__init__ method
+   - Line 12: Scheduler.run method
+
+4. taskflow/utils.py:
+   - Line 4: safe_execute function
+
+5. main.py:
+   - Line 6: main function
+
+Additional Issues Found:
+========================
+
+Implementation bugs that need fixing:
+1. TaskEngine.execute - hooks are called BEFORE task execution, should be AFTER
+2. TaskEngine.execute - hooks receive only 'name', should receive 'name' and 'result'
+3. Plugin loading doesn't validate that plugins register tasks
